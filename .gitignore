@@ -1,0 +1,8 @@
+.paket/paket.exe
+.paket/paket.targets
+packages
+bin
+
+AssemblyInfo.fs
+
+.DS_Store
