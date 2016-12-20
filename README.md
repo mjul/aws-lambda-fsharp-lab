@@ -26,7 +26,7 @@ After this, you can build the Lambda deployment package using the
 You can use the `aws` command like client like so to create the function:
 
     aws lambda create-function \
-   .   --function-name foo\
+      --function-name foo\
       --runtime dotnetcore1.0\
       --role lambda_basic_execution \
       --handler "HelloWorld::HelloWorld::handler" --zip-file "fileb://build/LambdaFunction.zip"
