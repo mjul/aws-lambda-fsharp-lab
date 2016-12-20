@@ -6,7 +6,17 @@ Trying out F# on AWS Lambda.
 The build is not working correctly when compiling from Mono to .NET
 Core (both with `build.fsx` and `build.sh`).
 
-Next step is to try building the application with Microsoft's own `dotnet` in the Docker image.
+The `Dockerfile`also tries building an F# application with Microsoft's
+own `dotnet` in the Docker image. It is commented out, however, as the
+FSC compile step fails.
+
+Manually installing the latest dotnet binaries with the F# generator
+and compiler does not resolve the issue (it cannot currently compile
+its own generated F# template projects).
+
+The conclusion for now is to wait for a new version of the .NET Core
+SDK and tool-chain for Debian.
+
 
 # Developing with Mono on Mac
 Assuming that you already have Mono installed, you need to install the
