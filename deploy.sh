@@ -2,11 +2,11 @@
 
 function log {
     echo "----------------------------------------------------------------"
-    echo $1
+    echo "$@"
     echo "----------------------------------------------------------------"
 }
 
-log "Using profile: " ${AWS_PROFILE}
+echo "Using profile: " ${AWS_PROFILE}
 
 #aws --profile ${AWS_PROFILE} lambda list-functions
 

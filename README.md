@@ -14,10 +14,20 @@ After this, you can build the Lambda deployment package using the
     mono packages/FAKE/tools/Fake.exe build.fsx
 
 
-## Deploying the Lambda function
+## Deploying the Lambda function 
+
+You can use the `aws` command like client like so to create the function:
 
     aws lambda create-function \
-      --function-name foo\
+   .   --function-name foo\
       --runtime dotnetcore1.0\
       --role lambda_basic_execution \
       --handler "HelloWorld::HelloWorld::handler" --zip-file "fileb://build/LambdaFunction.zip"
+
+Use the `deploy.sh` script to update the function. You must set the `AWS_PROFILE`
+environment variable to the name of the AWS profile to use for
+deploying. (The profiles are defined in your `~/.aws/config`
+configuration). For example if you have a profile named `mjul-lambda-dev`:
+
+    AWS_PROFILE=mjul-lambda-dev ./deploy.sh
+
