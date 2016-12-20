@@ -1,5 +1,12 @@
 # AWS Lambda F\# Lab
+
 Trying out F# on AWS Lambda.
+
+## Status
+The build is not working correctly when compiling from Mono to .NET
+Core (both with `build.fsx` and `build.sh`).
+
+Next step is to try building the application with Microsoft's own `dotnet` in the Docker image.
 
 # Developing with Mono on Mac
 Assuming that you already have Mono installed, you need to install the
