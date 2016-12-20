@@ -2,7 +2,10 @@
 .paket/paket.targets
 packages
 bin
+.fake
 
 AssemblyInfo.fs
+*.exe
+*.dll
 
 .DS_Store
