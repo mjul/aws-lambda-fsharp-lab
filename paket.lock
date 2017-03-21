@@ -5,7 +5,7 @@ NUGET
       System.Console (>= 4.0) - framework: >= net46, netstandard13
       System.IO (>= 4.1) - framework: >= net46, netstandard13
       System.Runtime (>= 4.1) - framework: >= net46, netstandard13
-    FAKE (4.46.1)
+    FAKE (4.56)
     Microsoft.NETCore.Platforms (1.1)
     Microsoft.NETCore.Targets (1.1)
     System.Console (4.3)
